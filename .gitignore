@@ -240,3 +240,13 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/examples/Vorlage/Vorlage.ino
+/PCB/MFRC522-PinOutBoard.zip
+/PCB/OscillatorCircuitBoard.zip
+/src/SPI.cpp
+/src/SPI.h
+/src/UART.cpp
+/src/UART.h
+/MFRC522-Chip.sln
+/src/I2C.cpp
+/src/I2C.h
