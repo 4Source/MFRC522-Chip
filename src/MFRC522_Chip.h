@@ -2,16 +2,17 @@
  Author:	4Source
 */
 
-#ifndef _MFRC522_Chip_h
-#define _MFRC522_Chip_h
+#ifndef MFRC522_Chip_h
+#define MFRC522_Chip_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-#include <arduino.h>
-#endif
+#include "arduino.h"
+
 
 class MFRC522 {
 public:
+	//
 	//Register
+	//
 	enum Reg
 	{
 		//Page 0: Command and status
@@ -80,8 +81,15 @@ public:
 		AnalogTestReg = 0x38, 				//controls the pins AUX1 and AUX2 
 		TestDAC1Reg = 0x39, 				//defines the test value for TestDAC1 
 		TestDAC2Reg = 0x3A, 				//defines the test value for TestDAC2 
-		TestADCReg = 0x3B, 					//shows the value of ADC I and Q channels 
+		TestADCReg = 0x3B 					//shows the value of ADC I and Q channels 
 		//Reserved 		= 0x3C to 0x3F		//reserved for production tests 
+	};
+	enum InterfaceType
+	{
+		UART = 0x00,	//Pins I2C = 0 EA = 0
+		I2C = 0x01,		//Pins I2C = 1 EA = EA		//I2C Slave Adresse 0|1|0|1|D4|D5|D6|R/S	
+		SPI = 0x02,		//Pins I2C = 0 EA = 1
+		I2CC = 0x03		//Pins I2C = 1 EA = 1		//I2C Slave Adresse 0|D1|D2|D3|D4|D5|D6|R/S	
 	};
 
 	//

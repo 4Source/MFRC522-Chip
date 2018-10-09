@@ -3,23 +3,5 @@
  */
 
 #include "MFRC522_Chip.h"
+#include "Arduino.h"
 
-
-class MyClass
-{
-public:
-	MyClass();
-	~MyClass();
-
-private:
-
-};
- 
-MyClass::MyClass()
-{
-	 
-}
-
-MyClass::~MyClass()
-{
-}
