@@ -6,5 +6,5 @@ The following boards was tested:
 ## Supported Chips
 Created for MFRC52202HN1
 
-The following Chips was tested:
+The following Chips are tested:
  * MFRC52202HN1
